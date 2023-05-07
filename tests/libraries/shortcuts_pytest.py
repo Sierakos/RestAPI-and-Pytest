@@ -29,8 +29,9 @@ def create_data():
     """
     payload = {
             "name": "book: " + str(uuid4()),
-            "price": 2.99,
-            "brand": "brand: " + str(uuid4())
+            "author": "author: " + str(uuid4()),
+            "year": 1999,
+            "genree": "genree: " + str(uuid4())
         }
     return requests.post(ENDPOINT + "create-item/", json=payload)
 

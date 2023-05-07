@@ -6,13 +6,15 @@ app = FastAPI()
 
 class Item(BaseModel):
     name: str
-    price: float
-    brand: Optional[str] = None
+    author: str
+    year: float
+    genree: Optional[str] = None
 
 class UpdateItem(BaseModel):
     name: Optional[str] = None
-    price: Optional[float] = None
-    brand: Optional[str] = None
+    author: Optional[str] = None
+    year: Optional[float] = None
+    genree: Optional[str] = None
 
 inventory = {}
 
